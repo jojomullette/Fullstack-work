@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Vote - A premier Online Destination for Pop Culture Voting</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Pop Vote</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>                    
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="/login/login.php">Sign in</a></li>
+                    <li><a href="sub.html">Submissions</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+  <section id="hero">
+      <div class="taskbar">
+        <div class="dropdown">
+          <button class="dropbtn">Menu</button>
+                        <div class="dropdown-content">
+                          <a href="Anime.html">Anime</a>
+                          <a href="Marvel.html">Marvel</a>
+            </div>
+          </div>
+        </div>
+    <section id="featured">
+        <div class="container">
+            <h2>Characters</h2>
+        </div>
+    </div>
+    <div class="button-container">
+    
+        <div class="counter-container">
+      
+    
+
+            <button class="image-button"><img src= "img/Spiderman.jpg" alt="Image 2"></button>
+            <button class="clickButton">Spiderman</button>
+            <p>Clix: <span class="counter" id="counter2">0</span></p>
+
+    </div>
+</div>
+<script>
+const buttons = document.querySelectorAll('.clickButton');
+
+buttons.forEach((button, index) => {
+    const counter = document.getElementById(`counter${index + 1}`);
+
+    let clickCount = 0;
+
+    button.addEventListener('click', function() {
+       clickCount++;
+
+        counter.textContent = clickCount;
+    });
+});
+</script>
+</section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Pop Vote. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
